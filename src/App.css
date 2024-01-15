@@ -1,38 +1,76 @@
-.App {
+/* UserForm.css */
+.form-container {
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-field {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.submit-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0ea5e9;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: #0369a1;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* UserProfile.css */
+.profile-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-details {
+  margin: 10px 0;
+}
+
+/* RepositoryList.css */
+.repo-list {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.repo-item {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #ef4444;
+  border-radius: 999px;
+  padding: 8px;
+  background: #fee2e2;
+}
+
+.reset svg {
+  padding-right: 4px;
 }
